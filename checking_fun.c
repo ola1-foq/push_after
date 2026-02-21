@@ -6,7 +6,7 @@
 /*   By: oalfoqha <oalfoqha@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 04:21:38 by oalfoqha          #+#    #+#             */
-/*   Updated: 2026/02/21 04:24:46 by oalfoqha         ###   ########.fr       */
+/*   Updated: 2026/02/21 04:55:48 by oalfoqha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	checking_num(char**argv)
 		{
 			if (!(is_num(argv[i][j])))
 			{
-				write(2, "Error1\n", 6);
+				write(2, "Error\n", 6);
 				return (0);
 			}
 			j++;
@@ -48,7 +48,7 @@ int	checking_dup(char **argv, int argc)
 		{
 			if (strcmp(argv[i], argv[j]) == 0)
 			{
-				write(2, "Error2\n", 6);
+				write(2, "Error\n", 6);
 				return (0);
 			}
 			j++;

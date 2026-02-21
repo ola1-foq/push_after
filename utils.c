@@ -6,7 +6,7 @@
 /*   By: oalfoqha <oalfoqha@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/20 19:43:49 by oalfoqha          #+#    #+#             */
-/*   Updated: 2026/02/21 04:32:05 by oalfoqha         ###   ########.fr       */
+/*   Updated: 2026/02/21 04:55:52 by oalfoqha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	checking_max_min(char **argv)
 		num = ft_atoi(argv[i]);
 		if (num > 2147483647 || num < -2147483648)
 		{
-			write(2, "Error3\n", 6);
+			write(2, "Error\n", 6);
 			return (0);
 		}
 		i++;
